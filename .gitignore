@@ -87,3 +87,5 @@ eclipse/RemoteSystemsTempFiles/.project
 .recommenders/
 
 RemoteSystemsTempFiles/
+/.classpath
+/.project
