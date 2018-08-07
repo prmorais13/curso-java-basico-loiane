@@ -5,7 +5,7 @@ public class Agenda {
 	private Contato[] contatos;
 	
 	public Agenda() {
-		contatos = new Contato[10];
+		contatos = new Contato[5];
 	}
 
 	public void adcionarContato(Contato contato) throws AgendaCheiaExcecao {
@@ -13,9 +13,10 @@ public class Agenda {
 		
 		for (int i = 0; i < contatos.length; i++) {
 			
-			if (contatos[i] != null) {
+			if (contatos[i] == null) {
 				contatos[i] = contato;
 				cheia = false;
+				break;
 			}			
 		}
 		
