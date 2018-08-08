@@ -11,6 +11,7 @@ eclipse/.metadata/.log
 eclipse/.metadata/.plugins/org.eclipse.core.resources/.projects/curso-java-basico/.markers
 
 *.dat
+*.class
 
 eclipse/.metadata/.plugins/org.eclipse.core.resources/.projects/curso-java-basico/org.eclipse.jdt.core/state.dat
 
