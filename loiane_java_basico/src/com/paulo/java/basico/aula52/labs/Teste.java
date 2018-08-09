@@ -92,7 +92,7 @@ public class Teste {
 		String nomeContato = lerInformacaoString(sc, "Entre com o nome do contato para pesquisar: ");
 		
 		try {
-			if (agenda.consultarContatoPorNome(nomeContato) >= 0) {
+			if (agenda.consultarContatoPorNome(nomeContato)) {
 				System.out.println("Contato já cadastrado!");
 				System.out.println();
 			}
