@@ -25,12 +25,20 @@ public class Agenda {
 		}
 	}
 	
-	public int consultarContatoPorNome(String nome) throws ContatoNaoExisteExcecao {
+	public boolean consultarContatoPorNome(String nome) throws ContatoNaoExisteExcecao {
 		
-		for (int i = 0; i < contatos.length; i++) {
+		/*for (int i = 0; i < contatos.length; i++) {
 			if (contatos[i] != null) {
 				if (contatos[i].getNome().equalsIgnoreCase(nome));
 				return i;
+			}
+		}*/
+		
+		for (Contato contato : contatos) {
+			if (contato != null) {
+				if (contato.getNome().equalsIgnoreCase(nome)) {
+					return true;
+				}
 			}
 		}
 		
@@ -41,7 +49,9 @@ public class Agenda {
 	public String toString() {
 		String s = "";
 		for (Contato contato : contatos) {
-			s += contato.toString() + "\n";
+			if (contato != null) {
+				s += contato.toString() + "\n";
+			}		
 		}
 		return s;
 	}
